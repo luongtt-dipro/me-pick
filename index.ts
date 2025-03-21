@@ -30,6 +30,10 @@ class UserService {
   getUserById(id: number) {
     this.userRepository.findOneById(id);
   }
+
+  deleteUserById(id: number) {
+    console.log("Deleting user...");
+  }
 }
 
 const userService = new UserService(new UserRepository(), new EmailService());
