@@ -27,6 +27,10 @@ class UserService {
     this.emailService.sendWelcomeEmail(email);
   }
 
+  getAllUsers() {
+    console.log("Fetching all users...");
+  }
+
   getUserById(id: number) {
     this.userRepository.findOneById(id);
   }
